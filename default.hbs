@@ -49,7 +49,6 @@
                         {{#if @site.twitter}}
                         <a href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">Twitter</a>
                         {{/if}}
-                        <a href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">RSS</a>
                     </div>
                 </div>
             </div>
@@ -66,7 +65,7 @@
 
         {{!-- The footer at the very bottom of the screen --}}
         <footer class="site-foot">
-            &copy; {{date format="YYYY"}} <a href="{{@site.url}}">{{@site.title}}</a> &mdash; Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+            <a href="{{@site.url}}">{{@site.title}}</a>
         </footer>
 
     </div>
