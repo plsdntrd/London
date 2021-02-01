@@ -16,6 +16,7 @@
         "dev": "gulp",
         "zip": "gulp zip",
         "test": "gscan .",
+        "test:ci": "gscan --fatal --verbose .",
         "pretest": "gulp build",
         "preship": "yarn test",
         "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; fi"
@@ -43,20 +44,24 @@
     },
     "bugs": "https://github.com/TryGhost/London/issues",
     "contributors": "https://github.com/TryGhost/London/graphs/contributors",
+    "browserslist": [
+        "defaults"
+    ],
     "devDependencies": {
-        "autoprefixer": "9.4.10",
+        "autoprefixer": "10.2.3",
         "cssnano": "4.1.10",
-        "gscan": "^2.0.0",
-        "gulp": "4.0.0",
-        "gulp-livereload": "4.0.1",
-        "gulp-postcss": "8.0.0",
-        "gulp-sourcemaps": "2.6.5",
+        "gscan": "3.6.1",
+        "gulp": "4.0.2",
+        "gulp-livereload": "4.0.2",
+        "gulp-postcss": "9.0.0",
+        "gulp-sourcemaps": "3.0.0",
         "gulp-uglify": "3.0.2",
         "gulp-util": "3.0.8",
         "gulp-watch": "5.0.1",
-        "gulp-zip": "4.2.0",
-        "postcss-color-function": "4.0.1",
-        "postcss-custom-properties": "8.0.9",
+        "gulp-zip": "5.0.2",
+        "postcss": "8.2.4",
+        "postcss-color-function": "4.1.0",
+        "postcss-custom-properties": "11.0.0",
         "postcss-easy-import": "3.0.0"
     },
     "config": {
